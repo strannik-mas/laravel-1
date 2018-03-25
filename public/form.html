@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <!--<form action="/comments" method="POST">-->
+        <form action="/pages" method="POST">
+            Имя:
+            <!--<input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">-->
+            <input type="text" name="name">
+            <br>Комментарий:
+            <br>
+            <textarea name="text" cols="30" rows="10"></textarea>
+            <!--<input type="hidden" name="_method" value="PUT">-->
+            <br>
+            <input type="submit" value="Добавить">
+        </form>
+    </body>
+</html>

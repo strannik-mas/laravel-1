@@ -1,0 +1,6 @@
+﻿1) Где теперь параметр 'fetch'  in file database.php?
+2) return redirect()->route('contact')->withInput();   //сохранение в сессию из метода контроллера с перенаправлением (не работает!!??)
+ContactController. Откуда берется 1 в конце вывода массива Session?
+3) не работает вызов хэлпера view с методом name
+              view()->name('default.template', 'myview');
+4)почему можно в foreach обращатся к свойствам модели (Core.php ->article) - посмотреть в Reflection
