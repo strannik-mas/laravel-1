@@ -24,16 +24,16 @@ class AdminPostController extends Controller
 	
 	//new post
     public function create(Request $request) {
-    	
-    	/*if(Gate::denies('add-article')) {
+    	/**/
+    	if(Gate::denies('add-article')) {
 			return redirect()->back()->with(['message'=>'У Вас нет прав']);
-		}*/
+		}
 
     	//32 урок
         $article = new Article;
         /*if(Gate::denies('add', $article)) {
             return redirect()->back()->with(['message'=>'У Вас нет прав']);
-        }*/
+        }
     	
     	if($request->user()->cannot('add', $article)){
             return redirect()->back()->with(['message'=>'У Вас нет вообще прав!!!']);
@@ -51,7 +51,7 @@ class AdminPostController extends Controller
             'img' => $data['img'],
             'text' => $data['text']
         ]);
-
+*/
     	//34 урок
 //        Event::fire(new onAddArticleEvent($res, $user));
 //        event(new onAddArticleEvent($res, $user));

@@ -32,7 +32,7 @@ class AuthServiceProvider extends ServiceProvider
 
         //31 урок
         //$gate->define('add-article', ClassName@func);
-        /*$gate->define('add-article', function(User $user){
+        $gate->define('add-article', function(User $user){
             foreach($user->roles as $role){
                 if($role->name === 'admin'){
                     return TRUE;
@@ -41,7 +41,7 @@ class AuthServiceProvider extends ServiceProvider
 
             return FALSE;
         });
-
+/*
         $gate->define('update-article', function(User $user, $article){
             foreach ($user->roles as $role) {
                 if($role->name === 'admin'){
