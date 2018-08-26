@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Helpers\SaveEloquentOrm;
 use App\Helpers\SaveFile;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Http\Request;
 
 class SaveStrServiceProvider extends ServiceProvider
 {
@@ -45,6 +46,7 @@ class SaveStrServiceProvider extends ServiceProvider
 
         //39 урок
         $this->app->bind('savestr', function (){
+            
 //            return new SaveEloquentOrm();
             return new SaveFile();
         });
