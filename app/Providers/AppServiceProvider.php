@@ -31,7 +31,7 @@ class AppServiceProvider extends ServiceProvider
             return Response::make($value);
         });
         
-        /*DB::listen(function($query){
+        /*DB::listen(function ($query) {
             dump($query->sql);
             dump($query->bindings);
         });*/
